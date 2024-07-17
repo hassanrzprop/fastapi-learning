@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "todos"
+version = "0.1.0"
+description = ""
+authors = ["Hassan Raza <141661553+hassanrzprop@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.1"
+uvicorn = {extras = ["standard"], version = "^0.30.1"}
+sqlmodel = "^0.0.20"
+
+ 
+[tool.poetry.scripts]
+dev="todos.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
