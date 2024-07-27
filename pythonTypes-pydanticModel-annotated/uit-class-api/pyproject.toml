@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "uitclass"
+version = "0.1.0"
+description = ""
+authors = ["Hassan Raza <141661553+hassanrzprop@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = {extras = ["standard"], version = "^0.30.3"}
+fastapi = "^0.111.1"
+mypy = "^1.11.0"
+
+[tool.poetry.scripts]
+dev="uitclass.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
