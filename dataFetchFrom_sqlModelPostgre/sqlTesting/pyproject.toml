@@ -1,17 +1,19 @@
 [tool.poetry]
-name = "uitclass"
+name = "todos"
 version = "0.1.0"
 description = ""
-authors = ["Hassan Raza <141661553+hassanrzprop@users.noreply.github.com>"]
+authors = ["hassanrzprop <hassanrzprop@gamil.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-fastapi = "^0.111.1"
-uvicorn = {extras = ["standard"], version = "^0.30.3"}
+fastapi = "^0.112.2"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+sqlmodel = "^0.0.21"
+psycopg2 = "^2.9.9"
 
 [tool.poetry.scripts]
-dev="uitclass.main:start"
+dev="todos.main:start"
 
 [build-system]
 requires = ["poetry-core"]
