@@ -31,6 +31,7 @@ def update_student(oldRollNo: str, newRollNo: str, newUserName: str):
     return {"error": "Student not found"}
 def start():
     uvicorn.run("studentapp.main:app",host="127.0.0.1",port=8080,reload=True) 
+    
 
 
 
