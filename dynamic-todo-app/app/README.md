@@ -1,0 +1,2 @@
+**.env file is used to protect data which actually store connection string with database and then add to gitignore 
+**we use to python-dotenv library to read data from env file and whith os.getenv() to write sensitive data to environment without leaking it to public platforms.
